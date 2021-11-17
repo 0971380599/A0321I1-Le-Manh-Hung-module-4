@@ -6,9 +6,10 @@ import codegym.service.impl.SimpleCustomerServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -21,10 +22,22 @@ public class CustomerController {
         model.addAttribute("customers", customers);
         return "list";
     }
-    @GetMapping("/customers/info")
-    public String showInfo(Model model) {
-        List<Customer> customers = customerService.findAll();
-        model.addAttribute("customers", customers);
-        return "info";
+    @GetMapping("/customers/{id}")
+    public ModelAndView showInformation(@PathVariable Long id) {
+        ModelAndView modelAndView = new ModelAndView("info");
+        Customer customer = customerService.findOne(id);
+        modelAndView.addObject("customer", customer);
+        return modelAndView;
+    }
+    @PostMapping("/custommer/update")
+    public String updateCustomer(
+            @RequestParam Long id,
+            @RequestParam String name,
+            @RequestParam String email,
+            @RequestParam String address
+    ) {
+        Customer customer = new Customer(id, name, email, address);
+        customerService.save(customer);
+        return "list";
     }
 }
