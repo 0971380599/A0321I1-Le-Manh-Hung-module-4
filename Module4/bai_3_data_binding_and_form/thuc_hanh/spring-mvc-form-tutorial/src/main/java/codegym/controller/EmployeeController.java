@@ -1,6 +1,7 @@
 package codegym.controller;
 
-import model.Employee;
+
+import codegym.model.Employee;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -15,7 +16,7 @@ public class EmployeeController {
     @RequestMapping(value = "showform", method = RequestMethod.GET)
     public String showForm(ModelMap model) {
         model.addAttribute("employee", new Employee());
-        return "employee/create";
+        return "create";
     }
 
     @RequestMapping(value = "/addEmployee", method = RequestMethod.POST)
@@ -23,6 +24,6 @@ public class EmployeeController {
         model.addAttribute("name", employee.getName());
         model.addAttribute("contactNumber", employee.getContactNumber());
         model.addAttribute("id", employee.getId());
-        return "employee/info";
+        return "info";
     }
 }
