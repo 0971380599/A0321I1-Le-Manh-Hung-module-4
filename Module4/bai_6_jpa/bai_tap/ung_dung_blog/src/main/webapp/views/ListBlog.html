@@ -24,11 +24,12 @@
             <td th:text="${blogs.getBlogId()}"></td>
             <td th:text="${blogs.getBlogName()}"></td>
             <td th:text="${blogs.getBlogSummary()}"></td>
-            <td><a th:href="@{/blog/content(id=${blogs.getBlogId()})}"><button class="btn btn-success" >Content</button></a></td>
-            <td><a th:href="@{/blog/edit(id=${blogs.getBlogId()})}"><button class="btn btn-success">Edit</button></a></td>
-            <td><a th:href="@{/blog/delete(id=${blogs.getBlogId()})}"><button class="btn btn-danger" >Delete</button></a></td>
+            <td><a th:href="@{/blog/content/__${blogs.getBlogId()}__}"><button class="btn btn-success">Content</button></a></td>
+            <td><a th:href="@{/blog/edit/__${blogs.getBlogId()}__}"><button class="btn btn-success">Edit</button></a></td>
+            <td><a th:href="@{/blog/delete/__${blogs.getBlogId()}__}"><button class="btn btn-danger" >Delete</button></a></td>
         </tr>
     </tbody>
 </table>
+<a th:href="@{/blog/content/create}"><button class="btn btn-success">Create</button></a>
 </body>
 </html>

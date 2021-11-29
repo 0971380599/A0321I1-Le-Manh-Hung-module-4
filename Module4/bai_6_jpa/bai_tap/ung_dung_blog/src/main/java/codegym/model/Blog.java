@@ -10,6 +10,7 @@ public class Blog {
     private Integer blogId;
     private String blogName;
     private String blogSummary;
+    @Column(columnDefinition = "text")
     private String blogStatus;
 
     public Blog() {
