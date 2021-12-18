@@ -10,11 +10,6 @@
 <div class="container">
     <form th:object="${book}" method="post" action="/book/save">
         <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Book ID</span>
-            <input th:field="*{bookId}" class="form-control" placeholder="Username" aria-label="Username"
-                   aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon2">Book Name</span>
             <input th:field="*{bookName}" class="form-control" placeholder="Username" aria-label="Username"
                    aria-describedby="basic-addon2">
@@ -29,7 +24,7 @@
             <input name="quantity" class="form-control" aria-label="Username">
         </div>
         <button type="submit" class="btn btn-success d-inline-flex">Create</button>
-        <a th:href="@{/book/list}"><div class="btn btn-success d-inline-flex">Back</div></a>
+        <a th:href="@{/list}"><div class="btn btn-success d-inline-flex">Back</div></a>
     </form>
 </div>
 </body>

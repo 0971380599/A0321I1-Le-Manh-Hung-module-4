@@ -11,4 +11,5 @@ public interface BookService {
     Page<Book> findByBookName(String bookName, Pageable pageable);
     void save(String quantity, Book book);
     void deleteBook(int id);
+    Book findById(int id);
 }
