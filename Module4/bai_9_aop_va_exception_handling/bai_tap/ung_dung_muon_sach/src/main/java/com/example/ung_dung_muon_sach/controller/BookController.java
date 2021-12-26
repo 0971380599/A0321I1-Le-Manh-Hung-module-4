@@ -4,7 +4,6 @@ import com.example.ung_dung_muon_sach.model.Book;
 import com.example.ung_dung_muon_sach.model.BookQuantity;
 import com.example.ung_dung_muon_sach.service.BookQuantityService;
 import com.example.ung_dung_muon_sach.service.BookService;
-import com.sun.tracing.dtrace.Attributes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -25,7 +24,7 @@ public class BookController {
     BookQuantityService bookQuantityService;
 
     @GetMapping("/list")
-    public String getList(Model model, @PageableDefault(size = 3) Pageable pageable, Optional<String> search_name) {
+    public String getList(Model model, @PageableDefault(size = 4) Pageable pageable, Optional<String> search_name) {
         if (search_name.isPresent()) {
         model.addAttribute( "books" , bookService.findByBookName(search_name.get(), pageable));
         } else {
