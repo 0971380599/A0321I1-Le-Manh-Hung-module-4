@@ -2,6 +2,7 @@ package com.example.resort.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 public class Employee {
@@ -18,7 +19,6 @@ public class Employee {
 
     @Column(columnDefinition = "VARCHAR(45)")
     private String employeePhone;
-
     @Column(columnDefinition = "VARCHAR(45)")
     private String employeeEmail;
 
@@ -26,17 +26,23 @@ public class Employee {
     private String employeeAddress;
 
     @ManyToOne(targetEntity = Position.class)
+    @JoinColumn(name = "position_id")
     private Position position;
 
     @ManyToOne(targetEntity = EducationDegree.class)
+    @JoinColumn(name = "education_degree_id")
     private EducationDegree educationDegree;
 
     @ManyToOne(targetEntity = Division.class)
+    @JoinColumn(name = "division_id")
     private Division division;
 
     @OneToOne(targetEntity = User.class)
+    @JoinColumn(name = "username")
     private User user;
 
+    @OneToMany(mappedBy = "employee")
+    private List<Contract> contracts;
     public Employee() {
     }
 
@@ -142,5 +148,13 @@ public class Employee {
 
     public void setDivision(Division division) {
         this.division = division;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

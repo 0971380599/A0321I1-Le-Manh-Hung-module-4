@@ -1,18 +1,16 @@
 package com.example.resort.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
 public class User {
     @Id
+    @Column(columnDefinition = "VARCHAR(45)")
     private String username;
     private String password;
 
-    @OneToOne(targetEntity = Employee.class)
+    @OneToOne(mappedBy = "user")
     private Employee employee;
 
     @ManyToMany(mappedBy = "users")
