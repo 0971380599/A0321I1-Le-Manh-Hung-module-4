@@ -1,5 +1,7 @@
 package com.example.resort.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -7,6 +9,7 @@ import java.util.List;
 @Entity
 public class Customer {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int customerId;
 
     @ManyToOne(targetEntity = CustomerType.class)
@@ -17,6 +20,7 @@ public class Customer {
     private String customerName;
 
     @Column(columnDefinition = "DATE")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate customerBirthday;
     private boolean customerGender;
 

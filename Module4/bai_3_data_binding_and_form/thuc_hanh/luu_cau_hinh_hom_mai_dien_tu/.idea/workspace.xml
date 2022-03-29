@@ -2,31 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd6143bd-cd4c-414c-939d-7bcb1881bf56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/config/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/controller/SettingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/model/Setting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/setting.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/java/codegym/config/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/java/codegym/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/java/codegym/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/java/codegym/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/java/codegym/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/java/codegym/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/webapp/views/CustomerCreate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/webapp/views/CustomerDelete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/webapp/views/CustomerEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/webapp/views/CustomerList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/webapp/views/CustomerView.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_4_views_va_thymeleaf/thuc_hanh/customer_manager/src/main/webapp/views/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-mvc-form-tutorial/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-mvc-form-tutorial/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-mvc-form-tutorial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-mvc-form-tutorial/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/repository/DivisionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/repository/EducationDegreeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/repository/PositionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/service/DivisionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/service/EducationDegreeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/service/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/service/impl/DivisionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/service/impl/EducationDegreeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/service/impl/PositionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/resources/templates/employee/EmployeeCreate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/resources/templates/employee/EmployeeList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/resources/templates/employee/EmployeeUpdate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/AttachService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/AttachService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/ContractDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/ContractDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/CustomerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/CustomerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Division.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/EducationDegree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/EducationDegree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/RentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/RentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/ServiceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/java/com/example/resort/model/ServiceType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/resort/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/resort/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +71,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/codegym" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../case_study" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -165,6 +171,8 @@
       <workItem from="1637320033965" duration="3538000" />
       <workItem from="1637379373300" duration="6540000" />
       <workItem from="1637418817350" duration="873000" />
+      <workItem from="1640871776603" duration="748000" />
+      <workItem from="1640947455251" duration="27000" />
     </task>
     <servers />
   </component>
@@ -180,6 +188,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1637383886665" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1640947481583">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1640947481583" />
     <state width="1024" height="201" key="GridCell.Tab.0.bottom" timestamp="1637335812299">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

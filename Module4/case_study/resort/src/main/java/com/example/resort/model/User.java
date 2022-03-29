@@ -1,5 +1,8 @@
 package com.example.resort.model;
 
+import com.example.resort.model.Employee;
+import com.example.resort.model.Role;
+
 import javax.persistence.*;
 import java.util.List;
 

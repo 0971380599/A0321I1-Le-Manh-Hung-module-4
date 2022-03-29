@@ -7,6 +7,7 @@ import java.util.List;
 @Entity
 public class Service {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int serviceId;
     @Column(columnDefinition = "VARCHAR(45)")
     private String serviceName;

@@ -1,14 +1,12 @@
 package com.example.resort.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
 public class RentType {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int rentTypeId;
     @Column(columnDefinition = "VARCHAR(45)")
     private String rentTypeName;

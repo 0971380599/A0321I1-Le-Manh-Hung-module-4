@@ -6,6 +6,7 @@ import java.util.List;
 @Entity
 public class CustomerType {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int customerTypeId;
     @Column(columnDefinition = "VARCHAR(45)")
     private String customerTypeName;

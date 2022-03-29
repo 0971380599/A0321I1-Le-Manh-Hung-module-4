@@ -7,6 +7,7 @@ import java.util.List;
 @Entity
 public class Contract {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int contractId;
 
     @Column(columnDefinition = "DATETIME")

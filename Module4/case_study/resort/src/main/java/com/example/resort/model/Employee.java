@@ -7,6 +7,7 @@ import java.util.List;
 @Entity
 public class Employee {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int employeeId;
 
     @Column(columnDefinition = "VARCHAR(45)")
@@ -44,6 +45,14 @@ public class Employee {
     @OneToMany(mappedBy = "employee")
     private List<Contract> contracts;
     public Employee() {
+    }
+
+    public List<Contract> getContracts() {
+        return contracts;
+    }
+
+    public void setContracts(List<Contract> contracts) {
+        this.contracts = contracts;
     }
 
     public Employee(int employeeId, String employeeName, LocalDate employeeBirthday, int employeeIdCard, double employeeSalary, String employeePhone, String employeeEmail, String employeeAddress, Position position, EducationDegree educationDegree, Division division, User user) {
@@ -156,5 +165,24 @@ public class Employee {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "employeeId=" + employeeId +
+                ", employeeName='" + employeeName + '\'' +
+                ", employeeBirthday=" + employeeBirthday +
+                ", employeeIdCard=" + employeeIdCard +
+                ", employeeSalary=" + employeeSalary +
+                ", employeePhone='" + employeePhone + '\'' +
+                ", employeeEmail='" + employeeEmail + '\'' +
+                ", employeeAddress='" + employeeAddress + '\'' +
+                ", position=" + position +
+                ", educationDegree=" + educationDegree +
+                ", division=" + division +
+                ", user=" + user +
+                ", contracts=" + contracts +
+                '}';
     }
 }
